@@ -17,3 +17,4 @@ world_cup_matches.head()
 
 ![FIFA World Cup Chart](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Screenshot%202025-02-23%20180316.png)
 
+
