@@ -7,14 +7,13 @@
 
 The expected goals metric was introduced at the 2018 world cup, and it is one of the more important metrics used today in the world of soccer. It provides insight on the level of play by that team, according to the type of chances that they created throughout the game. Even though expected goals data is only included for the previous two world cups, due to its relevance, we will keep these data points for further analysis.
 
-world_cup_matches["Date"] = pd.to_datetime(world_cup_matches["Date"])
+matches_2018_2022= world_cup_matches[world_cup_matches["Year"].isin([2018, 2022])]
 
-world_cup_matches["Year"] = world_cup_matches["Date"].dt.year
+expected_goals_2018_2022= matches_2018_2022[["Year", "Round", "home_xg", "away_xg"]]
 
-world_cup_matches= world_cup_matches[["Year"] + list(world_cup_matches.columns[:-1])]
+expected_goals_2018_2022["sum"]= expected_goals_2018_2022["home_xg"] + expected_goals_2018_2022["away_xg"]
 
-world_cup_matches.head()
+expected_goals_per_stage= expected_goals_2018_2022.groupby(["Year", "Round"])["sum"].mean()
 
-![FIFA World Cup Chart](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Screenshot%202025-02-23%20180316.png)
-
+sns.barplot(data=expected_goals_2018_2022, x="Year", y="sum", hue="Round", palette= "RdBu");
 
