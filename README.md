@@ -15,4 +15,5 @@ world_cup_matches= world_cup_matches[["Year"] + list(world_cup_matches.columns[:
 
 world_cup_matches.head()
 
-![Chart] (https://github.com/dmangwani23/FIFA-World-Cup-Analysis/blob/main/Screenshot%202025-02-23%20180316.pngraw=true)
+![FIFA Chart](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Screenshot%202025-02-23%20180316.png?raw=true)
+
