@@ -14,3 +14,5 @@ world_cup_matches["Year"] = world_cup_matches["Date"].dt.year
 world_cup_matches= world_cup_matches[["Year"] + list(world_cup_matches.columns[:-1])]
 
 world_cup_matches.head()
+
+![Chart] (https://github.com/dmangwani23/FIFA-World-Cup-Analysis/blob/main/Screenshot%202025-02-23%20180316.pngraw=true)
