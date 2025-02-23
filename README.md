@@ -17,3 +17,6 @@ expected_goals_per_stage= expected_goals_2018_2022.groupby(["Year", "Round"])["s
 
 sns.barplot(data=expected_goals_2018_2022, x="Year", y="sum", hue="Round", palette= "RdBu");
 
+![World Cup Image](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Screenshot%202025-02-23%20184443.png)
+
+
