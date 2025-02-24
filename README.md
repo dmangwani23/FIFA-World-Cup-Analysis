@@ -22,5 +22,3 @@ sns.barplot(data=expected_goals_2018_2022, x="Year", y="sum", hue="Round", palet
 We can notice that in **2018**, (excluding the Round of 16), the hypothesis is correct in that the later the stage it is in the World Cup, the less expected goals there are per game. The "Third Place Match" can be disregarded since it is a one-off game for the semifinal losing teams (with very little to play for, considering the trophy is not on the line anymore).
 
 Now in 2022, we see the complete opposite and the null hypothesis is rejected. As the World Cup rounds progressed, the more expected goals per game was seen. From a fanatic standpoint, this is always more entertaining, as one of the key highlights of a game is the ball entering the net.
-
-If expected goals haven't been tracked in the past, I was curious to see the actual number of goals per game and what World Cups have the matches with the maximum total of goals in a match.
