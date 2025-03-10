@@ -17,7 +17,7 @@ expected_goals_per_stage= expected_goals_2018_2022.groupby(["Year", "Round"])["s
 
 sns.barplot(data=expected_goals_2018_2022, x="Year", y="sum", hue="Round", palette= "RdBu");
 ```
-![World Cup Image](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Screenshot%202025-02-23%20184443.png)
+![World Cup Image](https://raw.githubusercontent.com/dmangwani23/FIFA-World-Cup-Analysis/main/Expected_Goals_Per_Stage.png)
 
 We can notice that in **2018**, (excluding the Round of 16), the hypothesis is correct in that the later the stage it is in the World Cup, the less expected goals there are per game. The "Third Place Match" can be disregarded since it is a one-off game for the semifinal losing teams (with very little to play for, considering the trophy is not on the line anymore).
 
